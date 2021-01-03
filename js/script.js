@@ -1,3 +1,20 @@
+function displayImages() {
+    var cartoona = ``;
+    for (var i = 0; i < 6; i++) {
+        cartoona += `<div class="col-lg-4 col-md-6 my-3">
+                        <div class="item position-relative">
+                            <img src="images/portfolio-`+ (i + 1) + `.jpg" class="img-fluid" alt="">
+                            <div class="item-caption text-center position-absolute">
+                                <h4>item title</h4>
+                                <p>lputate at, tempus viverra turpis. Fusce condimentum nunc acs</p>
+                            </div>
+                        </div>
+                     </div>`;
+    }
+    document.getElementById("myRow").innerHTML = cartoona;
+}
+displayImages();
+
 var imgs = Array.from(document.querySelectorAll(".item img"));
 var lightBoxContainer = document.getElementById("lightBoxContainer");
 var lightBoxItem = document.getElementById("lightBoxItem");
