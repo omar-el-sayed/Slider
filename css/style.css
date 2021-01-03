@@ -1,0 +1,75 @@
+body {
+    font-family: 'segoe ui light';
+    background-color: #bbf;
+}
+
+.item img {
+    cursor: pointer;
+}
+
+.item-caption {
+    background-color: #fff;
+    width: 80%;
+    padding: 10px;
+    bottom: 20px;
+    left: 10%;
+}
+
+#lightBoxContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+#lightBoxItem {
+    width: 50%;
+    height: 85vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#lightBoxItem i {
+    font-size: 20px;
+    margin: 15px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+#close {
+    top: 0;
+    right: 0;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #lightBoxItem {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #lightBoxItem {
+        width: 65%;
+    }
+    .item-caption {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    #lightBoxItem {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    #lightBoxItem {
+        width: 90%;
+        height: 80vh;
+    }
+}
