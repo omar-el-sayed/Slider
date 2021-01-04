@@ -75,4 +75,4 @@ document.addEventListener("keydown", function (e) {
     else if (e.code == "Escape") {
         closeSlide();
     }
-})
+});
